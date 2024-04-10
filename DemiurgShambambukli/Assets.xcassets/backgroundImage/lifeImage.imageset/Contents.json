@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "lifeImage.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

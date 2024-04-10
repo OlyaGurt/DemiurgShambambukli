@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		49764E302BC4AFD80079D0CE /* DemiurgShambambukliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E2F2BC4AFD80079D0CE /* DemiurgShambambukliApp.swift */; };
-		49764E322BC4AFD80079D0CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E312BC4AFD80079D0CE /* ContentView.swift */; };
+		49764E322BC4AFD80079D0CE /* CreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E312BC4AFD80079D0CE /* CreatorView.swift */; };
 		49764E342BC4AFDA0079D0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49764E332BC4AFDA0079D0CE /* Assets.xcassets */; };
 		49764E372BC4AFDA0079D0CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49764E362BC4AFDA0079D0CE /* Preview Assets.xcassets */; };
+		49764E452BC4BEE50079D0CE /* Font+Roboto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E442BC4BEE50079D0CE /* Font+Roboto.swift */; };
+		49764E4A2BC4C4370079D0CE /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49764E492BC4C4370079D0CE /* Roboto-Medium.ttf */; };
+		49764E512BC4CB2C0079D0CE /* CreatorViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E502BC4CB2C0079D0CE /* CreatorViewStore.swift */; };
+		49764E532BC4CBC60079D0CE /* CreatorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E522BC4CBC60079D0CE /* CreatorStore.swift */; };
+		49764E552BC534A80079D0CE /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49764E542BC534A80079D0CE /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49764E2C2BC4AFD80079D0CE /* DemiurgShambambukli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemiurgShambambukli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49764E2F2BC4AFD80079D0CE /* DemiurgShambambukliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemiurgShambambukliApp.swift; sourceTree = "<group>"; };
-		49764E312BC4AFD80079D0CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49764E312BC4AFD80079D0CE /* CreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorView.swift; sourceTree = "<group>"; };
 		49764E332BC4AFDA0079D0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49764E362BC4AFDA0079D0CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49764E442BC4BEE50079D0CE /* Font+Roboto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Roboto.swift"; sourceTree = "<group>"; };
+		49764E472BC4C1DC0079D0CE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		49764E492BC4C4370079D0CE /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		49764E502BC4CB2C0079D0CE /* CreatorViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorViewStore.swift; sourceTree = "<group>"; };
+		49764E522BC4CBC60079D0CE /* CreatorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorStore.swift; sourceTree = "<group>"; };
+		49764E542BC534A80079D0CE /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,10 @@
 		49764E2E2BC4AFD80079D0CE /* DemiurgShambambukli */ = {
 			isa = PBXGroup;
 			children = (
+				49764E4B2BC4CAB00079D0CE /* Sources */,
+				49764E462BC4C1C00079D0CE /* Font */,
+				49764E432BC4BE740079D0CE /* Extension */,
 				49764E2F2BC4AFD80079D0CE /* DemiurgShambambukliApp.swift */,
-				49764E312BC4AFD80079D0CE /* ContentView.swift */,
 				49764E332BC4AFDA0079D0CE /* Assets.xcassets */,
 				49764E352BC4AFDA0079D0CE /* Preview Content */,
 			);
@@ -65,6 +78,66 @@
 				49764E362BC4AFDA0079D0CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49764E432BC4BE740079D0CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49764E442BC4BEE50079D0CE /* Font+Roboto.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		49764E462BC4C1C00079D0CE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				49764E492BC4C4370079D0CE /* Roboto-Medium.ttf */,
+				49764E472BC4C1DC0079D0CE /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		49764E4B2BC4CAB00079D0CE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				49764E4C2BC4CAC80079D0CE /* Creator */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		49764E4C2BC4CAC80079D0CE /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				49764E4F2BC4CAEA0079D0CE /* Store */,
+				49764E4E2BC4CAE40079D0CE /* ViewStore */,
+				49764E4D2BC4CADD0079D0CE /* View */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		49764E4D2BC4CADD0079D0CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49764E312BC4AFD80079D0CE /* CreatorView.swift */,
+				49764E542BC534A80079D0CE /* CellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49764E4E2BC4CAE40079D0CE /* ViewStore */ = {
+			isa = PBXGroup;
+			children = (
+				49764E502BC4CB2C0079D0CE /* CreatorViewStore.swift */,
+			);
+			path = ViewStore;
+			sourceTree = "<group>";
+		};
+		49764E4F2BC4CAEA0079D0CE /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				49764E522BC4CBC60079D0CE /* CreatorStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +200,7 @@
 			files = (
 				49764E372BC4AFDA0079D0CE /* Preview Assets.xcassets in Resources */,
 				49764E342BC4AFDA0079D0CE /* Assets.xcassets in Resources */,
+				49764E4A2BC4C4370079D0CE /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49764E322BC4AFD80079D0CE /* ContentView.swift in Sources */,
+				49764E452BC4BEE50079D0CE /* Font+Roboto.swift in Sources */,
+				49764E532BC4CBC60079D0CE /* CreatorStore.swift in Sources */,
+				49764E552BC534A80079D0CE /* CellView.swift in Sources */,
+				49764E512BC4CB2C0079D0CE /* CreatorViewStore.swift in Sources */,
+				49764E322BC4AFD80079D0CE /* CreatorView.swift in Sources */,
 				49764E302BC4AFD80079D0CE /* DemiurgShambambukliApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +353,7 @@
 				DEVELOPMENT_TEAM = AU654X2B86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemiurgShambambukli/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +383,7 @@
 				DEVELOPMENT_TEAM = AU654X2B86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemiurgShambambukli/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
